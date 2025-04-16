@@ -6,13 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/your-repo/nginx-manifests.git
+    repoURL: https://github.com/rohanbundele/argocd-nginx-demo.git  # Fix: Add `.git`
     targetRevision: HEAD
-    path: nginx-manifests
+    path: nginx-manifests  # Ensure this folder exists!
   destination:
     server: https://kubernetes.default.svc
     namespace: default
   syncPolicy:
-    automated:
-      selfHeal: true
-      prune: true
+    automated: {}
