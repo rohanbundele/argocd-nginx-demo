@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Welcome to Bloo</title>
+    </head>
+    <body>
+    <h1>Welcome to Bloo</h1>
+    </body>
+    </html>
