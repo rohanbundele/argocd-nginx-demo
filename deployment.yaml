@@ -34,7 +34,7 @@ data:
     <!DOCTYPE html>
     <html>
     <head>
-    <title>Welcome to bloo V2!</title>
+    <title>Welcome to bloo V1!</title>
     <style>
         body {
             width: 35em;
