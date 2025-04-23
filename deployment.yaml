@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  namespace: nginx  # Replace it with your actual namespace if different
+  namespace: default  # Replace it with your actual namespace if different
 spec:
   replicas: 1 # Adjust as needed
   selector:
