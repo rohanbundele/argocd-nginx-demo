@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/rohanbundele/argocd-nginx-demo.git  # Replace with your Git repo
-    targetRevision: HEAD
-    path: .  # Looks for manifests in the root directory
+  repoURL: https://github.com/rohanbundele/argocd-nginx-demo.git
+  targetRevision: HEAD
+  path: manifests  # Changed from '.' to 'manifests'
   destination:
     server: https://kubernetes.default.svc
     namespace: default
