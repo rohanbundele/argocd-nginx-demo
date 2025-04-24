@@ -7,8 +7,8 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 1       # Number of additional pods allowed during update
-      maxUnavailable: 1 # Number of pods that can be unavailable during update
+      maxSurge: 50%       # Number of additional pods allowed during update
+      maxUnavailable: 0 # Number of pods that can be unavailable during update
   selector:
     matchLabels:
       app: nginx
